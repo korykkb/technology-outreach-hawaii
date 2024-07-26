@@ -3,23 +3,405 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      {/* 
+        <div class="alert-banner">
+          <div class="message">
+            <a href="https://hitorch.org/2022/11/14/4th-Annual-ICSpark-Program.html" target=“_blank” id="banner-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+          <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+          </svg>
+            4th Annual ICSpark Program: Registration Opens December 1st!
+            </a>
+          </div>
+        </div>
+      */}
+      <nav>
+        <a href="/"><img id="logo" src="/assets/images/logo/logo.svg" alt="TORCH-logo"/></a>
+        <ul>
+          <li class="nav-link"><a href="/programs.html" >PROGRAMS</a></li>
+          <li class="nav-link"><a href="/community.html" >COMMUNITY</a></li>
+          <li class="nav-link"><a href="/about.html" >ABOUT</a></li>
+          <li class="nav-link"><a class="cv-button" href="#">DONATE</a></li>
+        </ul>
+      </nav>
 
-export default App;
+      <nav id="nav-mobile">
+        <ul>
+          <li><a href="/programs.html" >PROGRAMS</a></li>
+          <li><a href="/community.html" >COMMUNITY</a></li>
+          <li><a href="/about.html" >ABOUT</a></li>
+          <li><a class="cv-button" href="#">DONATE</a></li>
+        </ul>
+      </nav>
+
+      {/*<script type="text/javascript">
+      _cv('bindButton', {
+        selector: '.cv-button',
+        type: 'donation',
+        campaign_id: '6gKl1Ayae7AMNvLQ',
+      });
+      </script>
+      */}
+
+      <div class="main">
+        {/* Panel Section */}
+        <div class="main-inner">
+
+          {/* Panel Section - First Row */}
+          <div class="section">
+
+            {/* Shaping the Digital Leaders of Tomorrow section */}
+            <div class="visionSection">
+              <h1>Shaping Future Digital Leaders</h1>
+              <p>A 501(c)3 non-profit leveraging the power of our youth to promote technology education, mentorship, collaboration and service across Hawaii.</p>
+              <button><a href="/about.html">Learn more</a></button>
+            </div>
+
+            {/* Updates section */}
+            <div id="newSection">
+              <h2 id="update">UPDATES</h2>
+              <br/>
+              <ul>
+                <li>
+                  <h2><a href="/2024/04/15/2024-Spring-Showcase.html">ICSpark’s 5th Anniversary Spring Showcase, Apr 15, 2024</a></h2>
+                  <p>ICSpark, a college student-run coding program for youth in 6th to 12th grade, is thrilled to announce its upcoming Spring Showcase event on Sunday, May 5th, from 9:00 AM to 12:00 PM at the Entrepreneur Sandbox. The event will mark the culmination of its 3-month Saturday coding program and celebrate the remarkable achievements of their students in web development.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2024/04/15/2024-Leadership-Application.html">Leadership Application, Apr 15, 2024</a></h2>
+                  <p>This year, we are seeking new leadership (Officers and Directors) to grow our impact and expand our reach. We are excited to welcome fantastic individuals to lead us and our passionate team on our vision towards equipping motivated Hawaii youth with the skills to thrive in the digital landscape of the future.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2024/04/11/2024-Advisory-Board.html">Introducing TORCH's New Advisory Board, Apr 11, 2024</a></h2>
+                  <p>We are thrilled to announce a significant milestone in the journey of Technology Outreach Hawaii (TORCH) - the formation of our distinguished advisory board. Comprising leaders with diverse expertise in technology, education, and community development, our advisory board will play a pivotal role in shaping TORCH’s strategic direction and advancing our mission of promoting technology education and access across the Hawaiian Islands.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2023/11/23/2023.html">Ignite Your Coding Journey, In-Person and Online Options Available!, Nov 23, 2023</a></h2>
+                  <p>Get ready for an exciting milestone as we launch the fifth year of ICSpark this upcoming Spring. We are thrilled to offer both in-person and online options! Registration kicks off on November 1, 2023, and closes on January 13, 2024. Hurry, as seats are limited and allocated on a first-come, first-served basis.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2023/06/21/2023-Mililani-Library-Workshop.html">Intro to Web Development for Teens, Jun 21, 2023</a></h2>
+                  <p>In this one day workshop at Mililani Public Library, teens will learn the basics to create their own website.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2023/04/16/2023-Spring-Showcase.html">Spring 2023 Showcase May 14 9am - 1pm, Apr 16, 2023</a></h2>
+                  <p>Join us for a morning of fun tech activity booths, amazing coding projects, and free food and refreshments at our first-ever Technology Outreach Hawaii (TORCH) Spring 2023 Showcase.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2023/01/09/4th-Annual-ICSpark-Program.html">4th Annual ICSpark Program. Registration Opens December 1st!, Jan 09, 2023</a></h2>
+                  <p>We are excited to launch our 4th year of ICSpark this upcoming Spring, this time with both in-person and online options available! Registration opens on December 1st 2022 and closes on January 21, 2023. Limited seats are available on a first-sign-up, first-served basis.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/12/11/gingerbread-coding-workshop-copy.html">Free Gingerbread House & Coding Workshop, Dec 11, 2022</a></h2>
+                  <p>This year we are excited to offer a week of Intro to Web Development workshops prior to our 3-month <a href="https://icspark.github.io/" target="_blank">ICSpark program</a>. Students in 6th - 12th grade are invited to attend and learn more about web development, build gingerbread houses, and interact with our college student mentors. This is a great way to get a taste of what the ICSpark program will be like before signing up for the course.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/09/12/hitorch.html">New domain name hitorch!, Sep 12, 2022</a></h2>
+                  <p>We have changed our website name to https://hitorch.org/ “hi torch dot org”!</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/09/12/INIT-pilot-program.html">New INIT() pilot program for HS students, Sep 12, 2022</a></h2>
+                  <p>TORCH is excited to launch the Interactive Near-Peer Information and Technology (INIT) after school mentorship program. INIT() is an extracurricular program that involves collaboration between TORCH and a high school teacher to bring college students (“Mentors”) to the after school classroom on a weekly basis to provide Computer Science (CS) education and guidance. Mentors provide guidance in the form of lectures, live-coding activities, and/or discussion on CS-related topics.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/07/02/python-course.html">New intro to Python summer course, Jul 02, 2022</a></h2>
+                  <p>Learn one of the most popular programming languages for data analysis and machine learning in our intro to Python course developed and facilitated by passionate college student mentors who are familiar with the challenges of learning to code for the first time.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/06/05/waianae-library-workshop-update.html">NOW VIRTUAL - Intro to Web Development June 18 Workshop!, Jun 05, 2022</a></h2>
+                  <p>Due to rising COVID cases, we are postponing our library workshops until further notice, but will continue to offer virtual events.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/05/13/waianae-library-workshop.html">First stop – Waianae!, May 13, 2022</a></h2>
+                  <p>Have you ever wanted to create your own website? Are you curious about technology or coding and looking for more guidance on how to start? Sign up for one of our Intro to Web Development workshop sessions on June 18, 2022 at Waianae Public Library!</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/05/13/library-workshops.html">Library Workshops &#9733, May 13, 2022</a></h2>
+                  <p>We are excited to be offering in-person coding or technology workshops at libraries across the islands! Event topics will vary based on volunteer interest. Currently we plan to hold 1 workshop every 1 – 2 months depending on volunteer availability.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2022/01/17/ICSpark-press-release.html">ICSpark Press Release 2022, Jan 17, 2022</a></h2>
+                  <p>Free virtual classes for teens teaches the basics of coding through peer mentorship with UH computer science students!</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/12/30/ICSpark.html">ICSpark, Dec 30, 2021</a></h2>
+                  <p>Free coding classes in Spring 2022 for 6th - 12th graders</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/12/05/CSED-week.html">CSED Week, Dec 05, 2021</a></h2>
+                  <p>Have you ever wanted to build your own website? Learn basic HTML, CSS, and JS to kickstart your learning! This is an interactive coding session that will be followed by a computer science college student panel where you can ask questions about tech, computer science, college and more! Content is geared towards 6th - 12th grade students but anyone is welcome to participate.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/07/31/Saturday-workshops.html">Saturday workshops, Jul 31, 2021</a></h2>
+                  <p>Join us on special Saturdays where we explore technology in different fields of study.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/07/31/New-live-coding-and-workshop-events.html">New live coding and workshop event schedule, Jul 31, 2021</a></h2>
+                  <p>Join us on Tuesdays and Thursdays for 30-minute rapid live coding sessions.</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/01/22/Volunteers.html">Recruiting motivated students!, Jan 22, 2021</a></h2>
+                  <p>Are you a high school or college student interested in learning more about technology,  networking with peers, and making a positive community difference during the pandemic?</p>
+
+
+                </li>
+            
+                <li>
+                  <h2><a href="/2021/01/21/New-site.html">New site under construction, Jan 21, 2021</a></h2>
+                  <p>We are in the process of building our website and adding content. In the meantime, <a href="http://eepurl.com/hojSrv" target="_blank">subscribe</a> to get email updates!</p>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div/>
+        {/* // https://getbootstrap.com/docs/4.0/getting-started/introduction/ */}
+
+        {/*<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        */}
+
+      <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/0.jpg" alt="First slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/1.jpg" alt="First slide"/>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/2.png" alt="Second slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/3.png" alt="Second slide"/>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/4.jpg" alt="Third slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/5.png" alt="Third slide"/>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/6.jpg" alt="Fourth slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/7.jpg" alt="Fourth slide"/>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/8.jpg" alt="Fifth slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/9.jpg" alt="Fifth slide"/>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-row">
+              <img class="carousel-image" src="/assets/images/carousel/10.jpg" alt="Sixth slide"/>
+              <img class="carousel-image" src="/assets/images/carousel/11.jpg" alt="Sixth slide"/>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      {/* Wave Section */}
+      <div class="spacing">
+
+      </div>
+      <div class="section" id="stand-section">
+        {/* Our Vision Section */}
+        <div class="vision-container">
+          <div class="vision-text">
+            <h1>Vision</h1>
+            <div class="vision-link">
+              <h1><a href="#">A Hawaii where everyone has access to technology education and resources. </a></h1>
+            </div>
+            {/* <div class="vision-body">
+              <p>We must bridge the digital divide in Hawaii by creating a sustainable and measurable infrastructure for accessible technology education, skilled mentors, and resources.</p>
+            </div> */}
+          </div>
+        </div>
+
+        {/* What We Do Section */}
+        <div class="stand-box">
+          <div class="stand-heading">
+            <h1>What We Do</h1>
+          </div>
+
+          {/* What We Do Section - repeat A */}
+          <div class="stand-layout">
+            <div class="stand-heading">
+              <h1><a href="/programs.html">Promote technology education</a></h1>
+            </div>
+            <div class="stand-individual">
+              <div class="stand-img">
+                <img src="/assets/images/home/education.png" alt="education-icon"/>
+              </div>
+              <div class="stand-body">
+                <p>Technological skills are essential for success in our rapidly advancing world. We utilize neer-peer mentorship to provide up-to-date knowledge and mutual benefits to both mentor and mentee. </p>
+              </div>
+            </div>
+          </div>
+
+          {/* What We Do Section - repeat B */}
+          <div class="stand-layout">
+            <div class="stand-heading">
+                  <h1><a href="/2021/01/22/Volunteers.html">Empower youth</a></h1>
+            </div>
+            <div class="stand-individual">
+              <div class="stand-img">
+                <img src="/assets/images/home/empower.png" alt="empower-icon"/>
+              </div>
+              <div class="stand-body">
+                <p>Built by students, for students, we empower youth and young adults by providing opportunities for leadership, mentorship, and innovation.  </p>
+              </div>
+            </div>
+          </div>
+
+          {/* What We Do Section - repeat C */}
+          <div class="stand-layout">
+            <div class="stand-heading">
+              <h1><a href="/community.html">Make resources accessible </a></h1>
+            </div>
+            <div class="stand-individual">
+              <div class="stand-img">
+                <img src="/assets/images/home/access.png" alt="access-icon"/>
+              </div>
+              <div class="stand-body">
+                <p>All programs are free and supported by the passion and generosity of our volunteers, donors, and sponsors. We strive to provide the technological resources required for learning.   </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      {/* End of File */}
+      <script src="/assets/js/slideshow.js"></script>
+
+      <div id="footer">
+        <div id="footer-main">
+          <div class="footer-section">
+            <h6 id="footer-padding"><a href="">Technology Outreach Hawaii (TORCH)</a> is a Hawaii non-profit organization tax-exempt under section 501(c)(3) of the Internal Revenue Code. Federal Identification Number or EIN: 87-1216901 </h6>
+            <h4><a href="">Contact Us At</a></h4>
+            <h6>info@hitorch.org</h6>
+          </div>
+          <div class="footer-social">
+            <div class="footer-social-title">
+              <h4><a href="https://linktr.ee/hitorch">Connect With Us</a></h4>
+              <br/>
+            </div>
+            <div class="footer-social-icon">
+              <a href="https://www.facebook.com/techoutreachhi" target="blank"><img src="/assets/images/logo/fb-white.png" alt="facebook-logo"/></a>
+              <a href="https://www.instagram.com/hitorch/" target="blank"><img src="/assets/images/logo/ig-white.png" alt="instagram-logo"/></a>
+              <a href="https://twitter.com/hitorch" target="blank"><img src="/assets/images/logo/twitter-white.png" alt="twitter-logo"/></a>
+            </div>
+            <div class="footer-social-title">
+              <br/>
+              <h4><a href="http://eepurl.com/hojSrv">Subscribe for Updates</a></h4>
+              <br/>
+            </div>
+          </div>
+          <div class="footer-link">
+            <div class="footer-pagelink">
+              <h4><a href="/about.html">Our People</a></h4>
+              <h4><a href="/programs.html">What We Do</a></h4>
+              <h4><a href="/2021/01/22/Volunteers.html">Get Involved</a></h4>
+            </div>
+            <div class="footer-pagelink">
+              <h4><a href="/index.html">Program</a></h4>
+              <h4><a href="/community.html">Community</a></h4>
+              <h4><a href="/programs.html">Impact</a></h4>
+            </div>
+          </div>
+
+
+          {/* <div class="footer-section"> */}
+            {/* reference https://stackoverflow.com/questions/4562587/shortest-way-to-print-current-year-in-a-website by T.J. Crowder */}
+            {/* <h4>Copyright <script>document.write(new Date().getFullYear())</script>.</h4>
+          </div> */}
+          {/* <div class="footer-section">
+            <a href="/privacy.html"><h4>PRIVACY POLICY</h4></a>,
+          </div> */}
+        </div>
+        <div class="copyright">
+          <h6>Copyright <script>document.write(new Date().getFullYear())</script> &#x2022; <a href="/privacy.html">Privacy Policy</a></h6>
+        </div>
+      </div>
+      {/*<script src='/assets/js/app.js'></script>*/}
+    </div>
+  )
+};
+
