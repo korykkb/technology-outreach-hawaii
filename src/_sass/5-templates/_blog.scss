@@ -1,0 +1,212 @@
+.blog-container {
+  @include flex(column, center, center);
+  width: 100%;
+
+  h1, p {
+    color: #E4FCFF;
+  }
+
+  a {
+    font-size: $h4;
+  }
+}
+
+.blog-background {
+  @include flex(column, center, center);
+  @include background('../../assets/images/blog/banner-bg.png', no-repeat, cover);
+  width: 100%;
+
+  @include laptop {
+    height: 50%;
+  }
+}
+
+.blog-box {
+  width: 80%;
+
+  @include laptop {
+    width: 90%;
+  }
+}
+
+// Header Section
+.blog-header{
+  padding: 40px 0px;
+  width: 100%;
+
+h1 {
+  width: 100%;
+  text-align: center;
+  }
+}
+
+// Featured Section
+.blog-main {
+  width: 100%;
+  display: flex;
+
+  @include laptop {
+    @include flex(column, center, center);
+    height: 100%;
+    color: black;
+  }
+
+  .blog-main-card:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  }
+
+  .blog-main-card  {
+    @include flex(column, flex-end, center);
+    height: 455px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // @include laptop {
+    //   width: 70%;
+    //   margin-right: 0px;
+    //   min-height: none;
+    //   min-width: none;
+    // }
+    //
+    // @include mobile {
+    //   width: 50%;
+    //   min-height: none;
+    //   min-width: none;
+    // }
+  }
+
+  .blog-main-img {
+    @include size(100%, 250px);
+    display: flex;
+  }
+
+  .blog-main-text {
+    padding: 20px;
+  }
+
+  .blog-main-center {
+    @include flex(row, flex-start, center);
+    width: 100%;
+  }
+
+  .blog-main-profile {
+    @include size(50px, 50px);
+    border-radius: 50%;
+    margin: 10px 10px 0 0;
+  }
+
+  .blog-main-summary {
+    @include flex(column, flex-start, flex-start);
+    padding-left: 30px;
+    width: 55%;
+
+    #blog-main-link{
+      width: 100%;
+      text-align: right;
+    }
+
+    @include laptop {
+      padding-top: 20px;
+      padding-left: 0;
+
+        p {
+          color: black;
+        }
+      }
+    }
+  }
+
+// Topic Section
+.blog-topic {
+  @include flex(row, center, center);
+  padding: 50px 0px;
+  width: 100%;
+
+  @include laptop {
+    @include flex(column, center, center);
+    width: 70%;
+    padding: 20px 0px;
+    margin: 0;
+  }
+
+  .blog-topic-des {
+    width: 70%;
+
+    p {
+      color: black;
+    }
+
+    @include laptop {
+      @include flex(column, center, center);
+      padding-bottom: 5px;
+      width: 100%;
+    }
+  }
+
+  .blog-topic-but {
+    text-align: right;
+    width: 20%;
+
+    @include laptop {
+      @include flex(column, center, center);
+      padding-bottom: 5px;
+      width: 100%;
+    }
+  }
+}
+
+// Blog Section
+.blog-holder {
+  width: 100%;
+
+  @include laptop {
+    @include flex(column, flex-start, flex-start);
+    // min-width: 455px;
+    // min-height: 455px;
+  }
+}
+
+.blog-section:hover {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.blog-section {
+  @include size(30%, 25vw);
+  @include flex(column, flex-end, center);
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black 1px solid;
+  float: left;
+  box-sizing: border-box;
+
+  .blog-section-side {
+    @include flex(column, flex-start, center);
+    width: 100%;
+  }
+
+  .blog-section-text {
+      @include flex(column, space-between, flex-start);
+      width: 90%;
+      padding-bottom: 20px;
+  }
+
+  .blog-section-bottom {
+    @include flex(row, flex-start, center);
+    opacity: 0.9;
+  }
+
+  .blog-section-profile {
+    @include size(50px, 50px);
+    border-radius: 50%;
+    margin: 10px 10px 0px 0px;
+  }
+
+  @include laptop {
+    @include flex(column, center, center);
+    margin-top: 40px;
+    height: 100%;
+    width: 70%;
+    height: 300px;
+  }
+}

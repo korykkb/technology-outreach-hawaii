@@ -1,0 +1,353 @@
+// BEGIN INSTAFEED CSS ========================================================
+
+// INSTAFEED CONTAINER
+.IGcontainer {
+  background-color: $dark-blue;
+  width: 100%;
+
+  .IGcontainer-space {
+    padding: 0px 100px 0px 150px;
+
+    @include laptop {
+      padding: 0px $text-margin 0px $text-margin;
+    }
+  }
+
+  .IGcontainer-space-heading {
+    width: 100%;
+    float: left;
+
+    a {
+      font-size: 30px;
+      float: left;
+      margin: 10px;
+    }
+  }
+}
+
+// INSTAFEED INDIVIDUAL POST
+#instafeed {
+  @include size(100%, 100%);
+
+ .IGpost {
+   @include flex(column, flex-end, flex-start);
+   @include size(225px, 225px);
+   border: 5px solid white;
+   opacity: 0.7;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 40px;
+ }
+
+ .IGpost:hover {
+   opacity: 1;
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition: all 0.8s;
+   transition: all 0.8s;
+ }
+
+ .IGpost:hover .IGcaption {
+     opacity: 1;
+ }
+
+ .IGcaption {
+   color: white;
+   padding: 0px 0px 10px 10px;
+   opacity: 0;
+ }
+}
+// END INSTAFEED CSS ========================================================
+
+// BEGIN MAIN SECTION (CSS PROPERTIES THAT APPLY TO ALL) ====================
+.main {
+  @include background('../../assets/images/home/index-bg.png', no-repeat, cover);
+  @include flex(column, center, center);
+  width: 100%;
+
+  h1 {
+    color: $light-blue;
+    margin-bottom: $text-margin;
+  }
+
+  p {
+    width: 85%;
+  }
+
+  .main-inner {
+    width: 80%;
+  }
+
+  .section {
+    @include flex(row, space-between, center);
+    height: 300px;
+    margin: $section-margin 0px $section-margin 0px;
+    color: $light-blue;
+
+    @include laptop {
+      @include flex(column, space-between, flex-start);
+      margin-bottom: 0px;
+      margin-top: $text-margin;
+      height: 100%;
+    }
+  }
+
+  button {
+    margin-top: $text-margin;
+
+    a {
+      color: $dark-blue;
+      font-size: $h3;
+   }
+  }
+}
+// END MAIN SECTION =========================================================
+
+// BEGIN PANEL SECTION ======================================================
+
+// Bridging the digital divide section
+.visionSection {
+  @include size(50%, 100%);
+  @include flex(column, center, flex-start);
+  @include laptop {
+    width: 100%;
+    margin-bottom: $text-margin;
+  }
+}
+
+// Updates section
+#newSection {
+  @include size(50%, 100%);
+  border-left: 1px solid $grey;
+  overflow-y: scroll;
+
+  li {
+    @include flex(column, center, flex-start);
+    text-align: left;
+    margin-top: $text-margin;
+    padding-left: $text-margin;
+    line-height: 1.5;
+    @include laptop {
+        padding: 0;
+      }
+    }
+
+    @include laptop {
+      @include size(100%, 300px);
+      margin-bottom: $text-margin;
+      border-left: none;
+
+      #update {
+          float: left;
+      }
+    }
+  }
+
+// goal section
+#goalSection {
+  @include size(40%, 100%);
+  @include laptop {
+    width: 100%;
+    margin-bottom: $text-margin;
+  }
+}
+
+// our team section
+#teamSection {
+  @include size(60%, 100%);
+  @include flex(column, center, center);
+  border-left: 1px solid $grey;
+  @include laptop {
+    width: 100%;
+    margin-bottom: $text-margin;
+    border-left: none;
+  }
+
+  .profile-header {
+    width: 100%;
+    text-align: center;
+    @include laptop {
+      text-align: left;
+
+      h2 {
+        justify-content: left;
+      }
+    }
+
+    p {
+      width: 100%;
+      padding-left: $text-margin;
+      @include laptop {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .place {
+    @include flex(row, center, center);
+  }
+
+  .place-dot{
+    @include size(20px, 20px);
+    margin: 5px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 50%;
+
+    @include laptop {
+      @include size(2vw, 2vw);
+    }
+  }
+
+  .profile-section {
+    @include size(100%, 100%);
+    @include flex(row, space-between, flex-start);
+    padding-left: $text-margin;
+    @include laptop {
+      padding-left: 0;
+
+      img {
+        @include size(13vw, 13vw);
+      }
+    }
+
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+
+    @include laptop{
+      height: 13vw;
+    }
+  }
+
+  .profile {
+    @include flex(column, center, center);
+    height: 100%;
+
+    h4 {
+      font-size: $small;
+      color: $light-grey;
+    }
+    img {
+      @include size(120px, 120px);
+      border-radius: 50%;
+      border: 1px white solid;
+      margin: 0px 10px;
+
+      @include laptop {
+        @include size(13vw, 13vw);
+      }
+    }
+  }
+}
+
+// END PANEL SECTION ========================================================
+
+// BEGIN OUR VISION SECTION =================================================
+.spacing {
+  @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
+  @include size(100%, 150px);
+}
+.vision-container {
+  @include background('../../assets/images/home/zip.png', no-repeat, contain);
+  padding: 80px 150px;
+  width: 90%;
+  background-position: right;
+  @include laptop {
+    @include background('', no-repeat, contain);
+    width: 100%;
+    padding: 20px 0px 0px $text-margin;
+  }
+
+
+  .vision-text {
+    width: 80%;
+
+    @include laptop {
+      width: 100%;
+    }
+  }
+
+  .vision-link {
+    @include size(60%, 100%);
+
+    a {
+      font-size: 25px;
+      float: left;
+    }
+  }
+
+  .vision-body {
+    float: left;
+    padding-top: 10px;
+  }
+}
+// END OUR VISION SECTION ===================================================
+
+// BEGIN WHAT WE DO =========================================================
+#stand-section {
+  @include size(100%, 1075px);
+  // @include background('../../assets/images/home/weDo-bg.svg', no-repeat, cover);
+  background-color: $dark-blue;
+  @include flex(column, flex-start, flex-start);
+  margin: 0;
+  @include laptop {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .stand-layout {
+    width: 100%;
+  }
+
+  .stand-box {
+    padding: 0px 150px 0px 150px;
+    @include laptop {
+      padding: 20px 0px 0px $text-margin;
+    }
+  }
+
+  .stand-individual {
+    @include flex(row, center, center);
+    width: 100%;
+  }
+
+  img {
+    @include size(100px, 100px);
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+
+  .stand-heading {
+    width: 100%;
+    float: left;
+    a {
+      font-size: 30px;
+      float: left;
+      margin: 10px;
+    }
+  }
+
+  .stand-img {
+    float: left;
+  }
+
+  .stand-body {
+    float: right;
+    margin-left: 30px;
+    width: 100%;
+    text-align: left;
+
+    a {
+      width: 100%;
+    }
+  }
+
+// END WHAT WE DO ==========================================================
+}

@@ -1,0 +1,116 @@
+#post {
+  background-color: $light-grey;
+  height: 100%;
+  @include flex(column, center, center);
+  color: $black;
+
+  a {
+    color: $red;
+  }
+
+  #background {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+
+  #post-section {
+    height: 100%;
+    width: 70%;
+    padding: 3% 5%;
+
+    #post-info {
+      text-align: center;
+
+      #blog-h1 {
+        font-size: 40px;
+      }
+
+      .author-date_container {
+        margin-top: 15px;
+        @include flex(row, center, center);
+        img {
+          width: 30px;
+          margin-right: 10px;
+          margin-top: 0px;
+          border-radius: 100px;
+
+        }
+      }
+
+      #quote {
+        padding: 40px 0;
+        font-size: 20px;
+        font-family: $shippori-mincho;
+        color: #5c5c5c;
+
+      }
+    }
+  }
+
+}
+
+#quote-post {
+  padding: 40px 0;
+  font-size: 20px;
+  font-family: $shippori-mincho;
+  line-height: 30px;
+  // color: #5c5c5c;
+}
+
+#description {
+  font-size: 15px;
+  font-style: italic;
+}
+
+#post-container {
+  @include flex(row, center, center);
+  width: 100%;
+
+  @include tablet {
+    @include flex(column, center, center);
+  }
+}
+
+#post-img1 {
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+
+  @include tablet {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+#post-img2 {
+  width: 50%;
+  height: 100%;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.post-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-button {
+  background-color: $red;
+  font-size: 19px;
+  color: white;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+#post a {
+  color: $yellow;
+}
