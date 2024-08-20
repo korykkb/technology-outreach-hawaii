@@ -8,7 +8,7 @@ export default [
     website: "",
     interests: "Data Visualization, Image Navigation, Web Development",
     bio: "Hi! I am a medical student looking to incorporate more technology with medicine.",
-    profile: assets/images/profiles/gina_watanabe.jpg
+    profile: "assets/images/profiles/gina_watanabe.jpg"
   },
   {
     full_name: "Boyang Zhang",
