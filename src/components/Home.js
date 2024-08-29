@@ -21,7 +21,9 @@ export default function Home() {
           <li className="nav-link"><a href="/programs.html" >PROGRAMS</a></li>
           <li className="nav-link"><a href="/community.html" >COMMUNITY</a></li>
           <li className="nav-link"><a href="/about.html" >ABOUT</a></li>
+          {/*
           <li className="nav-link"><a className="cv-button" href="#">DONATE</a></li>
+          */}
         </ul>
       </nav>
 
@@ -30,7 +32,9 @@ export default function Home() {
           <li><a href="/programs.html" >PROGRAMS</a></li>
           <li><a href="/community.html" >COMMUNITY</a></li>
           <li><a href="/about.html" >ABOUT</a></li>
+          {/*
           <li><a className="cv-button" href="#">DONATE</a></li>
+          */}
         </ul>
       </nav>
 
@@ -113,7 +117,7 @@ export default function Home() {
             
                 <li>
                   <h2><a href="/2022/12/11/gingerbread-coding-workshop-copy.html">Free Gingerbread House & Coding Workshop, Dec 11, 2022</a></h2>
-                  <p>This year we are excited to offer a week of Intro to Web Development workshops prior to our 3-month <a href="https://icspark.github.io/" target="_blank">ICSpark program</a>. Students in 6th - 12th grade are invited to attend and learn more about web development, build gingerbread houses, and interact with our college student mentors. This is a great way to get a taste of what the ICSpark program will be like before signing up for the course.</p>
+                  <p>This year we are excited to offer a week of Intro to Web Development workshops prior to our 3-month <a href="https://icspark.github.io/" target="_blank" rel="noreferrer">ICSpark program</a>. Students in 6th - 12th grade are invited to attend and learn more about web development, build gingerbread houses, and interact with our college student mentors. This is a great way to get a taste of what the ICSpark program will be like before signing up for the course.</p>
 
 
                 </li>
@@ -204,7 +208,7 @@ export default function Home() {
             
                 <li>
                   <h2><a href="/2021/01/21/New-site.html">New site under construction, Jan 21, 2021</a></h2>
-                  <p>We are in the process of building our website and adding content. In the meantime, <a href="http://eepurl.com/hojSrv" target="_blank">subscribe</a> to get email updates!</p>
+                  <p>We are in the process of building our website and adding content. In the meantime, <a href="http://eepurl.com/hojSrv" target="_blank" rel="noreferrer">subscribe</a> to get email updates!</p>
 
                 </li>
               </ul>
@@ -286,7 +290,9 @@ export default function Home() {
           <div className="vision-text">
             <h1>Vision</h1>
             <div className="vision-link">
+              {/*}
               <h1><a href="#">A Hawaii where everyone has access to technology education and resources. </a></h1>
+              */}
             </div>
             {/* <div className="vision-body">
               <p>We must bridge the digital divide in Hawaii by creating a sustainable and measurable infrastructure for accessible technology education, skilled mentors, and resources.</p>
@@ -353,8 +359,8 @@ export default function Home() {
       <div id="footer">
         <div id="footer-main">
           <div className="footer-section">
-            <h6 id="footer-padding"><a href="">Technology Outreach Hawaii (TORCH)</a> is a Hawaii non-profit organization tax-exempt under section 501(c)(3) of the Internal Revenue Code. Federal Identification Number or EIN: 87-1216901 </h6>
-            <h4><a href="">Contact Us At</a></h4>
+            <h6 id="footer-padding">Technology Outreach Hawaii (TORCH) is a Hawaii non-profit organization tax-exempt under section 501(c)(3) of the Internal Revenue Code. Federal Identification Number or EIN: 87-1216901 </h6>
+            <h4>Contact Us At</h4>
             <h6>info@hitorch.org</h6>
           </div>
           <div className="footer-social">

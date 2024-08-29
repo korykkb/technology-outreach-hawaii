@@ -35,7 +35,8 @@ export default function Community() {
                                     {{communitySL[0].summary}}
                                     */}
                                 </p>
-                                <a href="{{communitySL[0].url}}" target="blank"/>
+                                {/*<a href="{{communitySL[0].url}}" target="blank"/>
+                                */}
 
                         </div>
                     </div>
@@ -72,9 +73,13 @@ export default function Community() {
                             <h2>National Resources</h2>
                         </div>
                         <div class="resources-online-bar">
+                            {/*
                             <a id="link-basic" style="color: #E4FCFF;">Basic Digital Skills</a>
-                            <a id="link-intermediate">Intermediate</a>
+
+                            <a 
+                            id="link-intermediate">Intermediate</a>
                             <a id="link-hard">Advanced</a>
+                            */}
                         </div>
                         <hr/>
                             {/*}
