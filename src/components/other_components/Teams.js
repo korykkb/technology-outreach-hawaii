@@ -2,14 +2,14 @@ import React from "react"
 
 export default function Teams(props) {
     return (
-        <div class="background">
-            <div class="team-box">
-                <div class="team-display">
-                    <div class="team-display-head">
+        <div className="background">
+            <div className="team-box">
+                <div className="team-display">
+                    <div className="team-display-head">
                         <h2>Our Leadership</h2>
                         {/* <p>Our members share a passion for technology and social change in their professional and academic endeavors.  </p>
                         <br>
-                        <div class="team-display-nav">
+                        <div className="team-display-nav">
                             <a href="#Directors">Directors</a>
                             <a href="#Creative">Creative Media Team</a>
                             <a href="#Volunteers">Volunteers</a>
@@ -22,10 +22,10 @@ export default function Teams(props) {
                         {% assign roleSplit = role | split:' ' %}
                         {% assign id = roleSplit[0] %}
                         */}
-                        <div class="team-display-role" /*id={{id}}*/>
+                        <div className="team-display-role" /*id={{id}}*/>
                             {/* <h2> {{ role }} </h2> */}
                         </div>
-                        <div class="team-display-row">
+                        <div className="team-display-row">
                             {/*}
                             {% for member in site.data.members offset: offset %}
                             {% if member[1].role != role %}
@@ -33,11 +33,11 @@ export default function Teams(props) {
                             {% endif %}
                             {% assign offset = offset | plus: 1 %}
                             */}
-                            <div class="team-display-all">
-                                <div class="team-display-all-img">
+                            <div className="team-display-all">
+                                <div className="team-display-all-img">
                                     <img src={`....assets/images/profiles/${props.profileImg}`} alt="TORCH-profile-image"/>
                                 </div>
-                                <div class="team-display-all-text">
+                                <div className="team-display-all-text">
                                     <h3>{props.fullName}</h3>
                                     <p>{props.title}</p>
                                     {/*}
@@ -46,7 +46,7 @@ export default function Teams(props) {
                                     */}
                                 </div>
                                 {/* ICONS */}
-                                <div class="team-display-all-icon">
+                                <div className="team-display-all-icon">
                                 {/*
                                 {% if member[1].github != NULL %}
                                 */}
@@ -77,7 +77,7 @@ export default function Teams(props) {
                         */}
                     </div>
                 </div>
-                <div class="advisory">
+                <div className="advisory">
                     <h2>Advisory Board</h2>
                     {/*
                     {% for member in site.data.members %}
@@ -85,9 +85,9 @@ export default function Teams(props) {
                         {/*
                         {% if member[1].role == "Advisors" %}
                         */}
-                        <div class="profile">
+                        <div className="profile">
                             <img src="{{ member[1].profile }}" alt=""/>
-                            <div class="profile-text">
+                            <div className="profile-text">
                                 {/*}
                                 <h3>{{ member[1].full_name }}</h3>
                                 <br/>

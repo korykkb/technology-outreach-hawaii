@@ -6,19 +6,20 @@ export default function About() {
     const teams = members.map(item => {
         return (
             <Teams
+                key={item.id}
                 {...item}
             />
         )
     })
 
     return (
-        <div class="about-container">
+        <div className="about-container">
             {/* ABOUT SECTION */}
-            <div class="banner-box">
-                <div class="about">
-                    <div class="about-img">
+            <div className="banner-box">
+                <div className="about">
+                    <div className="about-img">
                     </div>
-                    <div class="about-text">
+                    <div className="about-text">
                         <h2>ABOUT US</h2>
                         <p>Technology Outreach Hawaii (TORCH) began in December 2020 to encourage technology education and access across the islands of Hawaii. Our founding members believe that technology is an essential part of our everyday lives, our professional endeavors, and our future. </p>
                         <br/>
@@ -27,7 +28,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div class="wave">
+            <div className="wave">
 
             </div>
 

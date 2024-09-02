@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     fullName: "Gina Watanabe",
     role: "Directors",
     title: "Director - CEO",
@@ -11,6 +12,7 @@ export default [
     profileImg: "gina_watanabe.jpg"
   },
   {
+    id: 2,
     fullName: "Boyang Zhang",
     role: "Directors",
     title: "Director",
@@ -21,6 +23,7 @@ export default [
     profileImg: "boyang_zhang.png"
   },
   {
+    id: 3,
     fullName: "Michelle Leano",
     role: "Directors",
     title: "CCO",
@@ -32,6 +35,7 @@ export default [
     profileImg: "michelle_leano.jpg"
   },
   {
+    id: 4,
     fullName: "Robert Lemon",
     role: "Directors",
     title: "Director - COO",
@@ -43,6 +47,7 @@ export default [
     profileImg: "robert_lemon.png"
   },
   {
+    id: 5,
     fullName: "Timothy Huo",
     role: "Directors",
     title: "Director - CIO",
@@ -54,6 +59,7 @@ export default [
     profileImg: "timothy_huo.png"
   },
   {
+    id: 6,
     fullName: "Ed Barnabas",
     role: "Advisors",
     title: "Advisor",
@@ -65,6 +71,7 @@ export default [
     profileImg: "ed_barnabas.jpg"
   },
   {
+    id: 7,
     fullName: "Scott Robertson",
     role: "Advisors",
     title: "Advisor",
@@ -76,6 +83,7 @@ export default [
     profileImg: "scott_robertsion.jpg"
   },
   {
+    id: 8,
     fullName: "Stacey Aldrich",
     role: "Advisors",
     title: "Advisor",
@@ -87,15 +95,16 @@ export default [
     profileImg: "stacey_aldrich.jpg"
   },
   {
-  fullName: "Brett Tanaka",
-  role: "Advisors",
-  title: "Advisor",
-  github: "",
-  linkedin: "",
-  website: "",
-  interests: "",
-  bio: "Brett Tanaka - Educational Specialist – Computer Science Program Manager - Hawaii State Department of Education. Brett is the Educational Specialist for Computer Science and provides statewide K-12 computer science education-related support. Brett has also worked in a variety of technology related positions including desktop publishing, Apple/Epson repair technician, network/systems administrator, software applications trainer and technical support. Brett has served as Past-President for the Hawai’i Society for Technology in Education (HSTE) ISTE-affiliate chapter and is the current President and founding member for the Computer Science Teachers Association (CSTA) Hawaii CSTA-affiliate chapter. He has a Master’s of Science in Information Systems (MSIS) from Hawaii Pacific University.",
-  profileImg: "brett_tanaka.png"
+    id: 9,
+    fullName: "Brett Tanaka",
+    role: "Advisors",
+    title: "Advisor",
+    github: "",
+    linkedin: "",
+    website: "",
+    interests: "",
+    bio: "Brett Tanaka - Educational Specialist – Computer Science Program Manager - Hawaii State Department of Education. Brett is the Educational Specialist for Computer Science and provides statewide K-12 computer science education-related support. Brett has also worked in a variety of technology related positions including desktop publishing, Apple/Epson repair technician, network/systems administrator, software applications trainer and technical support. Brett has served as Past-President for the Hawai’i Society for Technology in Education (HSTE) ISTE-affiliate chapter and is the current President and founding member for the Computer Science Teachers Association (CSTA) Hawaii CSTA-affiliate chapter. He has a Master’s of Science in Information Systems (MSIS) from Hawaii Pacific University.",
+    profileImg: "brett_tanaka.png"
   }
 ]
 /*}  

@@ -6,7 +6,7 @@ import Community from "./components/Community"
 import './App.css';
 
 export default function App() {
-  return (
+  return ( 
     <div>
       <Home />
       <Programs />
